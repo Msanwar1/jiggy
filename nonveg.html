@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEGETARIAN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Martian Mono', monospace;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Young Serif', serif;
+            color: rgb(250, 77, 77);
+                       
+        }
+        body{
+           background-image: url("bgimage.jpg");
+           background-size: cover;
+           background-repeat: no-repeat;
+           height: 100vh;
+           
+        }
+        .parent{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          
+          
+        }
+        .child1,.child2,.child3,.child4,.child5{
+          height: 320px;
+          width: 280px;
+          margin: 20px;
+          justify-content: center;
+          text-align: center;
+
+        }
+        .title{
+          text-align: center;
+          color: rgb(21, 255, 0);
+          text-decoration: aliceblue;
+          font-weight: bolder;
+        }
+        .dal,.chanadal,.palak,.vadapav,.pulihora{
+          height: 50%;
+          width: 100%;
+
+        }
+        .rating{
+          margin-left: 140px;
+          color: rgb(21, 255, 0);
+        }
+        .itemtitle{
+          color: rgba(255, 0, 0, 0.863);
+          font-size: x-large;
+          font-weight: bold;
+          font-family: sans-serif;
+          
+
+        }
+        #bt1,#bt2,#bt3,#bt4,#bt5{
+          margin-left: 100px;
+          cursor: pointer;
+          transition: border-color 0.5s, border-radius 1s;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+          
+        }
+        #bt1:hover{
+          background-color: rgb(224, 26, 26);
+          border-radius: 200px;
+
+        }
+        #bt2:hover{
+          background-color: rgb(224, 26, 26);
+          border-radius: 200px;
+
+        }
+        #bt3:hover{
+          background-color: rgb(224, 26, 26);
+          border-radius: 200px;
+
+        }
+        #bt4:hover{
+          background-color: rgb(224, 26, 26);
+          border-radius: 200px;
+
+        }
+        #bt5:hover{
+          background-color: rgb(224, 26, 26);
+          border-radius: 200px;
+          
+        }
+        .para{
+          font-size: 12px;
+          color: rgb(255, 254, 254);
+          font-weight: bold;
+          font-family: sans-serif;
+        }
+        @media (width < 600px) {
+          body{
+            background-image: url("bgimage.jpg");
+            height: max-content;
+
+           
+          }
+          .parent{
+          display: grid;
+          grid-template-columns: 1fr; 
+        }
+        .child1,.child2,.child3,.child4,.child5{
+          height: 320px;
+          width: 280px;
+          
+          
+          
+          justify-content: center;
+
+        }
+        
+
+          
+            
+          
+        }
+        
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&family=Poppins:wght@500&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-danger ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand text-white fs-2" href="./select.html">JIGGY</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">My Fav List 📋</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="#">Top Rated ⭐</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="#">Recent Order</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light " type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <h1 class="title">NON-VEGETERIAN ITEMS</h1>
+    <div class="parent">
+      
+      <div class="child1">
+        
+        <img src="./hyderabad biryani.jpg" alt="biryani" class="dal"><label class="rating"
+        >5.0 ⭐⭐⭐⭐⭐</label>
+        <label class="itemtitle">Hyderabad Biryani</label>
+        <p class="para">"Experience the regal flavors of Hyderabad with our delectable Biryani. Order now for royal satisfaction." </p>
+        <button class="btn btn-danger fw-bold " id="bt1">Try Now</button></a>
+
+      </div>
+
+
+      <div class="child2">
+        <img src="./lalamaas.jpg" alt="lalmaas" class="chanadal">
+        <label class="rating"
+        >4.0 ⭐⭐⭐⭐</label>
+        <label class="itemtitle">Laal Maas</label><p class="para">"Ignite your taste buds with the fiery Laal Maas. Spice up your meal with us."</p>
+        <button class="btn btn-danger fw-bold " id="bt2">Try Now</button></a>
+
+
+      </div>
+
+
+      <div class="child3">
+        <img src="./Tunday-Kebab.jpg" alt="kebab" class="palak"><label class="rating"
+        >4.0 ⭐⭐⭐⭐</label>
+        <label class="itemtitle">Tunday Kababs</label><p class="para">"Savor the legendary taste of Tunday Kababs. An exquisite culinary experience awaits."</p>
+        <button class="btn btn-danger fw-bold " id="bt3">Try Now</button></a>
+
+
+      </div>
+
+
+      <div class="child4">
+        <img src="./bapa ilish.jpg" alt="bapa ilish" class="vadapav">
+        <label class="rating"
+        >4.0 ⭐⭐⭐⭐</label>
+        <label class="itemtitle">Bhapa Ilish</label><p class="para"> "Delight in the rich and fragrant Bhapa Ilish. A Bengali classic, just a click away."</p>
+        <button class="btn btn-danger fw-bold " id="bt4">Try Now</button></a>
+
+
+      </div>
+
+
+      <div class="child5">
+        <img src="./fish.jpg" alt="fish" class="pulihora"><label class="rating"
+        >4.0 ⭐⭐⭐⭐</label>
+        <label class="itemtitle">Fish Recheado</label><p class="para">"Dive into the vibrant Goan flavors of Fish Recheado. Order today for a coastal escape."</p>
+        <button class="btn btn-danger fw-bold " id="bt5">Try Now</button></a>
+
+
+      </div>
+    </div>
+
+      
+
+    
+</body>
+</html>

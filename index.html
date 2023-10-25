@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIGGY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Martian Mono', monospace;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Young Serif', serif;
+            color: rgb(250, 77, 77);
+                       
+        }
+        body{
+           background-image: url("bgimage.jpg");
+           background-size: cover;
+           background-repeat: no-repeat;
+        }
+        #main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid rgb(250, 77, 77);
+        }
+        #child{
+            height: 300px;
+            width: 280px;
+
+        }
+        h1{
+            font-size: 32px;
+        }
+        .button{
+            display: relative;
+            left: 100px;
+            top: 100px;
+
+        }
+        .email,.password{
+            padding: 10px;
+    
+
+        }
+        #button{
+            margin: 40px 40px 40px 50px;
+            
+        }
+        input{
+            border-color: rgb(250, 77, 77);
+            border-radius: 6px;
+        }
+         
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&family=Poppins:wght@500&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="main">
+        <div id="child">
+            <h1> 👨‍🍳ORDER IN </h1>
+            <form action="form">
+                <label class="email">Email :</label> <br>
+                <input type="email" name="email" placeholder="🍕🍕🍕🍕@Gmail.com" required> <br>
+                <label for="password" class="password">password :</label> <br>
+                <input required placeholder="🍴🍴🍴🍴🍴" type="password" name="password" id="password"><br>
+                
+                </form>
+                <a href="./select.html">                <button class="btn btn-danger " id="button">ENTER🤤</button>
+                </a>
+        </div>     
+    </div>
+    
+</body>
+</html>
